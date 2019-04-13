@@ -1,0 +1,38 @@
+<!-- index.html -->
+<html>
+  <head>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/styles.css">
+  </head>
+  <body>
+    <!-- single-spa apps -->
+    <div id="navBar"></div>
+    <div id="home"></div>
+    <div id="about"></div>
+    <div id="register"></div>
+    <div id="contactus"></div>
+    <div id="signin"></div>
+    <div id="signout"></div>
+    <div id="newpost"></div>
+
+
+
+    <!-- Jquery -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <!-- Compiled and minified JavaScript --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> 
+    <script>
+      $(document).ready(function(){
+        $(".button-collapse").sideNav();
+      });
+    </script>
+    
+    <!-- connect to the single-spa config file -->
+    <script src="/dist/single-spa.config.js"></script>
+
+
+
+  </body>
+</html>
